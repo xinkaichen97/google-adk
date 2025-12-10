@@ -9,6 +9,11 @@ Day 1b: Evaluation and structured data
 
 ### Day 2 - Embeddings and Vector Stores/Databases
 
+Day 2a: Document QA with RAG
+
+Day 2b: Similarity and embeddings
+
+Day 2c: Classifying embeddings with Keras
 
 ### Day 3 - Generative AI Agents
 
