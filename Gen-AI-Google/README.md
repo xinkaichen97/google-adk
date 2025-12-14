@@ -17,6 +17,9 @@ Day 2c: Classifying embeddings with Keras
 
 ### Day 3 - Generative AI Agents
 
+Day 3a: Function calling with the Gemini API
+
+Day 3b: Building an agent with LangGraph
 
 ### Day 4 - Domain-Specific LLMs
 
