@@ -5,13 +5,13 @@ https://www.kaggle.com/learn-guide/5-day-genai
 
 Day 1a: Prompting fundamentals
 
-Day 1b: Evaluation and structured data
+Day 1b: Evaluation and structured output
 
 ### Day 2 - Embeddings and Vector Stores/Databases
 
-Day 2a: Document QA with RAG
+Day 2a: Document Q&A with RAG using Chroma
 
-Day 2b: Similarity and embeddings
+Day 2b: Embeddings and similarity scores
 
 Day 2c: Classifying embeddings with Keras
 
