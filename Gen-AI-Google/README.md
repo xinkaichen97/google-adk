@@ -23,5 +23,12 @@ Day 3b: Building an agent with LangGraph
 
 ### Day 4 - Domain-Specific LLMs
 
+Day 4a: Fine-tuning a custom model
+
+Day 4b: Google Search grounding
 
 ### Day 5 - MLOps for Generative AI
+
+No code for Day 5
+
+Bonus Content: Extra API features to try
