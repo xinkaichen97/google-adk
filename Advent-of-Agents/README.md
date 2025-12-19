@@ -24,7 +24,7 @@ Now to run it:
 ```
 uvx --from google-adk adk web my_agent/
 ```
-# Day 3: Gemini 3 + ADK
+## Day 3: Gemini 3 + ADK
 
 Option 1: One liner with Agent Starter Pack (uvx doesn't store the venv):
 ```
@@ -48,3 +48,29 @@ Update `agent.py` and then run locally:
 curl 'https://raw.githubusercontent.com/GoogleCloudPlatform/devrel-demos/refs/heads/main/ai-ml/agent-labs/gemini-3-pro-agent-demo/my_agent/agent.py' > my_agent/agent.py
 adk web
 ```
+
+## Day 4: Source-Based Deployment
+
+Create new project with Agent Starter Pack:
+```
+uvx agent-starter-pack create my-agent -a adk_base -d agent_engine
+cd my-agent
+make deploy
+```
+
+Or to enhance existing ADK agents so that we can deploy:
+```
+uvx agent-starter-pack enhance -d agent_engine
+```
+
+To successfully deploy the agent, make sure to 
+- Set up GCP credentials (account, project)
+- Turn on both **Vertex AI API** and **Cloud Resource Manager API** in [APIs & Services](https://console.cloud.google.com/apis/)
+
+## Day 5: Production Observability
+
+Observe the deployed agent in [Agent Engines](https://console.cloud.google.com/vertex-ai/agents/agent-engines)
+
+[Documentation](https://googlecloudplatform.github.io/agent-starter-pack/guide/observability.html) on production observability
+
+
