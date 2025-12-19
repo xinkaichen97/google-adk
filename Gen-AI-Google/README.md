@@ -31,4 +31,4 @@ Day 4b: Google Search grounding
 
 No code for Day 5
 
-Bonus Content: Extra API features to try
+### Bonus Content: Extra API features to try
