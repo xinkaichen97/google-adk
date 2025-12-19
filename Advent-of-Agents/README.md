@@ -45,7 +45,7 @@ It creates an `agent.py` instead of a YAML file.
 
 Update `agent.py` to use Google search and Gemini 3, then run locally:
 ```
-curl 'https://raw.githubusercontent.com/GoogleCloudPlatform/devrel-demos/refs/heads/main/ai-ml/agent-labs/gemini-3-pro-agent-demo/my_agent/agent.py' > my_agent/agent.py
+curl 'https://raw.githubusercontent.com/GoogleCloudPlatform/devrel-demos/refs/heads/main/ai-ml/agent-labs/gemini-3-pro-agent-demo/my_agent/agent.py' > day3-agent/agent.py
 adk web
 ```
 
