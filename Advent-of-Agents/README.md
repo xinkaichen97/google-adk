@@ -43,7 +43,7 @@ adk create day3-agent
 
 It creates an `agent.py` instead of a YAML file.
 
-Update `agent.py` and then run locally:
+Update `agent.py` to use Google search and Gemini 3, then run locally:
 ```
 curl 'https://raw.githubusercontent.com/GoogleCloudPlatform/devrel-demos/refs/heads/main/ai-ml/agent-labs/gemini-3-pro-agent-demo/my_agent/agent.py' > my_agent/agent.py
 adk web
@@ -75,7 +75,7 @@ Observe the deployed agent in [Agent Engines](https://console.cloud.google.com/v
 
 ## Day 6: ADK ready in Gemini CLI
 
-Create a deep search agent
+Create a deep search agent:
 ```
 uvx agent-starter-pack create day6-deep-search-agent --adk
 cd day6-deep-search-agent
