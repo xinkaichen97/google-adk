@@ -16,7 +16,7 @@ Get API keys in [Google AI Studio](https://aistudio.google.com/api-keys)
 
 Create and define the agent in the YAML file (): 
 ```
-uvx --from google-adk adk create --type=config my_agent
+uvx --from google-adk adk create --type=config day2-agent
 ```
 It creates a `root_agent.yaml` because of `--type=config`.
 
@@ -38,7 +38,7 @@ uv add google-adk
 uv add google-genai
 export GOOGLE_API_KEY="YOUR_API_KEY"
 source .venv/bin/activate
-adk create my_agent
+adk create day3-agent
 ```
 
 It creates an `agent.py` instead of a YAML file.
@@ -51,10 +51,10 @@ adk web
 
 ## Day 4: Source-Based Deployment
 
-Create new project with Agent Starter Pack:
+Create a new project with Agent Starter Pack:
 ```
-uvx agent-starter-pack create my-agent -a adk_base -d agent_engine
-cd my-agent
+uvx agent-starter-pack create day4-agent -a adk_base -d agent_engine
+cd day4-agent
 make deploy
 ```
 
@@ -73,4 +73,20 @@ Observe the deployed agent in [Agent Engines](https://console.cloud.google.com/v
 
 [Documentation](https://googlecloudplatform.github.io/agent-starter-pack/guide/observability.html) on production observability
 
+## Day 6: ADK ready in Gemini CLI
 
+Create a deep search agent
+```
+uvx agent-starter-pack create day6-deep-search-agent --adk
+cd day6-deep-search-agent
+make install
+```
+
+Set up Gemini CLI:
+```
+pip install pydantic-ai
+gemini extensions install https://github.com/derailed-dash/adk-docs-ext
+gemini
+```
+
+Note: `gemini` needs to be installed, like `brew install gemini` for Mac.
