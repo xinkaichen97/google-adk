@@ -90,3 +90,27 @@ gemini
 ```
 
 Note: `gemini` needs to be installed, like `brew install gemini` for Mac.
+
+## Day 7: LLMs Can Execute Code
+
+Clone the repository and cd into the project directory:
+```
+git clone https://github.com/google/adk-samples.git
+cd adk-samples/python/agents/retail-ai-location-strategy
+```
+
+Create a .env file in the app folder with your API keys:
+```
+cp .env.example .env
+```
+Update `GOOGLE_API_KEY` and `MAPS_API_KEY` (with Places API enabled).
+
+Install & Run:
+```
+make install && make dev
+```
+
+The agent is now running at http://localhost:8501.
+
+The sub-agent `gap_analysis_agent` calls code_executor=BuiltInCodeExecutor() to execute code.
+
