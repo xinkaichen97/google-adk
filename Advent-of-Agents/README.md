@@ -114,3 +114,6 @@ The agent is now running at http://localhost:8501.
 
 The sub-agent `gap_analysis_agent` calls code_executor=BuiltInCodeExecutor() to execute code.
 
+## Day 8: Effective Context Management
+
+ADK Context design thesis: context as a compiled view
